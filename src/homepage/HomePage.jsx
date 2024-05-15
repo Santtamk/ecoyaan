@@ -2,6 +2,7 @@ import React from 'react'
 import TopNav from './TopNav'
 import './css/nav.css'
 import HeroSection from './HeroSection'
+import MainSection from './MainSection'
 
 const HomePage = () => {
   return (
@@ -10,6 +11,7 @@ const HomePage = () => {
           <TopNav />
           <HeroSection />
       </div>
+      <MainSection />
     </>
   )
 }
