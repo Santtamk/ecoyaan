@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./css/nav.css";
+import { Link } from "react-router-dom";
 
 function TopNav() {
 
@@ -10,17 +11,19 @@ function TopNav() {
     };
   return (
     <>
-      <header>
+      <header style={{ backgroundColor:'rgba(0, 0, 0, 5)'}}>
         <div className="navbar_header">
           <div className="logo">
-            <a href="home">ECOYAAN</a>
+            <Link to='/'>
+              <a href="home">ECOYAAN</a>
+              </Link>
           </div>
           <ul className="links">
             <li>
-              <a href="home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="AboutUs">About Us</a>
+              <Link to="/aboutUs">About Us</Link>
             </li>
             <li>
               <a href="Sell">Sell on Ecoyaan</a>
